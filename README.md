@@ -17,4 +17,6 @@ Featuring Aberration in the form of: The difference between the current and the 
 Inspired by https://www.youtube.com/watch?v=JvcCBDFkNiA&list=LL&index=7 
 
 # Controls
-Supports controllers
+Keyboard & Mouse or Gamepad Controller
+
+![image](https://github.com/Spookybuddy/Game-Jam-0/assets/93450263/5b47a8d5-4c73-48c0-9abc-cab1a7359783)
