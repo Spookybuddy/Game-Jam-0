@@ -8,13 +8,16 @@ Roguelike shopping game
 
 # Made for Acerola Game Jam 0
 Game Jam Link
+https://itch.io/jam/acerola-jam-0
 
-Itch Page Link
+Itch Page
+https://jlstone.itch.io/shopping-spree
 
 Featuring Aberration in the form of: The difference between the current and the previous frame!
 - Only the _Aberrations_ are visible, and everything else is grey.
 
-Inspired by https://www.youtube.com/watch?v=JvcCBDFkNiA&list=LL&index=7 
+Inspired by
+https://www.youtube.com/watch?v=JvcCBDFkNiA&list=LL&index=7 
 
 # Controls
 Keyboard & Mouse or Gamepad Controller
