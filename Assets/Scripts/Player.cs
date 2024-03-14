@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
     //Reset the camera rotation to the direction of the elevator
     public void CameraReset(InputAction.CallbackContext ctx)
     {
-
+        if (!cameraLock) orbital.transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
     //Force relative to camera front; Power var MovPow | Cooldown var MovCdn

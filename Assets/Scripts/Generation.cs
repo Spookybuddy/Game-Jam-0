@@ -245,7 +245,7 @@ public class Generation : MonoBehaviour
         for (int i = 1; i < size.x; i++) {
             for (int j = 1; j < size.y; j++) {
                 if (Neighbors(i, j) < 1) {
-                    GameObject t = Instantiate(spawner, new Vector3(i + 1 - size.x / 2, 0.2f, j), Quaternion.identity, transform) as GameObject;
+                    GameObject t = Instantiate(spawner, new Vector3(i + 1 - size.x / 2, 0, j), Quaternion.identity, transform) as GameObject;
                     spawns.Add(t.transform);
                 }
             }
@@ -256,6 +256,7 @@ public class Generation : MonoBehaviour
             int r = Random.Range(0, manager.loot.Length);
             int s = Random.Range(0, spawns.Count);
             Instantiate(manager.loot[r], spawns[s].position, Quaternion.identity);
+            spawns.RemoveAt(s);
         }
 
         for (int i = 0; i < spawns.Count; i++) Destroy(spawns[i].gameObject);
