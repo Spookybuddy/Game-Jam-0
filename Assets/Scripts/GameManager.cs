@@ -92,6 +92,8 @@ public class GameManager : MonoBehaviour
         active = false;
         warned = false;
 
+        //Force player inside
+        player.transform.position = new Vector3(0, 0.26f, -1.1f);
         player.rig.AddForce(Vector3.back * 2, ForceMode.Impulse);
     }
 
@@ -218,7 +220,7 @@ public class GameManager : MonoBehaviour
                 player.SlmCdn = Mathf.Clamp01(player.SlmCdn * 0.8f);
                 break;
             case "Loot Increase":
-                lootAmount = Mathf.Min(lootAmount + Random.Range(5, 9), floor * 8);
+                lootAmount = Mathf.Min(lootAmount + Random.Range(3, 6), floor * 4);
                 break;
             case "Time Increase":
                 player.CountMulti += 0.5f;
@@ -252,7 +254,7 @@ public class GameManager : MonoBehaviour
                 addAmount += 8;
                 break;
             case "Loot Reduced":
-                lootAmount = Mathf.Max(lootAmount - 3, (floor + 1) * 4);
+                lootAmount = Mathf.Max(lootAmount - 3, floor + 3);
                 break;
             case "Time Reduced":
                 player.CountMulti = Mathf.Max(player.CountMulti - 0.1f, 0.2f);
