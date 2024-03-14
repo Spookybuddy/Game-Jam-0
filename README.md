@@ -1,7 +1,7 @@
 # Shopping Spree
 Roguelike shopping game
 
-- Collect as much as you can on every floor before the elevator leaves you behind!
+- Collect as much as you can on every floor and return to the elevator before it leaves you behind!
 - Roll the Hedgehog around, picking up items Katamari-style.
 - Reach your price goal, earning as much as you can.
 - Upgrade yourself AND the difficulty!
